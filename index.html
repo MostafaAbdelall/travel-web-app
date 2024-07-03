@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- font awesome -->
+     <link rel="stylesheet" href="css/all.min.css">
+     <!-- css -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <title>travel</title>
+</head>
+<body>
+<!-- hero start -->
+  <div class="hero">
+    <!-- nav-start -->
+   <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo"><span>T</span>ravel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#book">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pack">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallary">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input type="text" placeholder="Search">
+              <button class="btn fm ms-auto" type="button">Search</button>
+            </form>
+        </div>
+    </div>
+   </nav>
+<!-- nav end -->
+
+<!-- home start -->
+<section class="home">
+    <div class="container">
+        <div class="content text-center">
+            <h5>Welcome To World</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <p class="py-3 ">
+               Get ready to embark on a journey that will immerse you in joy and wonder,<br>
+               and enjoy the most beautiful moments that will remain timeless in your memory.
+            </p>
+            <a href="#book">Book Place</a>
+        </div>
+    </div>
+</section>
+<!-- home end -->
+  </div>
+   <!-- hero end -->
+
+
+<!-- book start -->
+    <section class="book py-5" id="book">
+        <div class="container">
+
+        <div class="main-text text-center mb-5">
+            <h1><span>B</span>ooking</h1>
+        </div>
+        
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 py-3 py-md-0 mb-3">
+            <div class="card">
+                <img src="./images/book-img.png" alt="">
+            </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-12 py-3 py-md-0 text-start">
+            <form action="#" onsubmit="logName()">
+
+                <input type="text" class="form-control" placeholder="Name" id="name" required><br>
+                <input type="email" class="form-control" placeholder="Email" id="email" required><br>
+                <!-- <input type="text" class="form-control" placeholder="Where To" id="wto" required><br> -->
+              <select name="where to" id="wh" class="form-control">
+                <option value="where to Go">where to Go</option>
+                <option value="Giza">Giza</option>
+                <option value="Sharm El-Sheikh">Sharm El-Sheikh</option>
+                <option value="Hurghada">Hurghada</option>
+                <option value="Siwa">Siwa</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Aswan">Aswan</option>
+              </select><br>
+
+                <input type="number" class="form-control" placeholder="How Many Travlers" id="hmt" required><br>
+                <input type="number" class="form-control" name="num" id="num" min="1" max="3 0" placeholder="How many day"><br>
+                <textarea class="form-control" rows="5" name="text" placeholder="More Details" id="md" ></textarea>
+                <input type="button" value="submit" class="btn my-3" id="submit" onclick="saveData()">
+            </form>
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- Section Book End -->
+
+
+<!-- packages start -->
+<section class="packges py-5" id="pack">
+    <div class="container">
+        <div class="main-text text-center mb-5">
+            <h1><span>P</span>ackages</h1>
+        </div>
+        <div class="row">
+            <div class="card col-sm-12 col-md-6 my-2 p-0 ">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="image py-2">
+                          <img src="images/giza.jpg" class="img-fluid rounded-start rounded-4" alt="...">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><span>Gi</span>za</h5>
+                          <p class="card-text">Embark on an unforgettable journey to the timeless marvels of the Pyramids of Giza, Egypt.</p>
+                          <p class="card-text la">Last updated 3 mins ago</p>
+                          <div class="star mb-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                          </div>
+                          <!-- modal start-->
+                          <div class="mdl">
+                            <!-- modal button -->
+                            <button class="card btn"
+                             data-bs-toggle="modal"
+                              data-bs-target="#m1">
+                              Learn More
+                            </button>
+                            <!-- modal body -->
+                            <div class="modal" id="m1">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h5 class="modal-title">
+                                      Giza
+                                    </h5>
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <ul>
+                                      <h5>Features</h5>
+                                      <li>
+                                        Visit the Pyramids of Giza: Explore one of the Seven Wonders of the Ancient World and learn about its rich history and surrounding secrets.
+                                      </li>
+                                      <li>
+                                        See the Great Sphinx: Enjoy seeing the colossal statue of the Great Sphinx and learn about its story and significance in Egypt's history.
+                                      </li>
+                                      <li>
+                                        our the Pyramid Museum: Explore the Pyramid Museum to see more Egyptian artifacts and important historical treasures
+                                      </li>
+                                      <li>
+                                        Explore Saqqara: Visit the Saqqara site and explore its pharaonic ruins, temples, and tombs
+                                      </li>
+                                    </ul>
+                                    <p>
+                                      Discover the timeless wonders of the Pyramids of Giza, where ancient mysteries meet modern exploration. Explore the colossal structures, unravel the secrets of the Great Sphinx, and immerse yourself in the rich history and culture of ancient Egypt. With expert guides and awe-inspiring views, this journey promises an unforgettable adventure through the heart of antiquity.
+                                    </p>
+
+                                    <h6>Price: <span>20$</span></h6>
+                                  </div>
+                                  <div class="modal-footer text-start">
+                                    <button class="c-btn" data-bs-dismiss="modal">close</button>
+                                    <button class="b-btn" data-bs-dismiss="modal"><a href="#book" class="btn">booking now</a></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- modal end-->
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 my-2 p-0 ">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                      <div class="image py-2">
+                        <img src="images/sharm.jpg" class="img-fluid rounded-start rounded-4" alt="...">
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title"><span>Sharm</span> El-Sheikh</h5>
+                        <p class="card-text">
+                          Discover the enchantment of Sharm El Sheikh in a journey filled with adventure and relaxation, where stunning nature meets cultural heritage.
+                        </p>
+                        <p class="card-text la">Last updated 3 mins ago</p>
+                        <div class="star mb-2">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                        </div>
+                          <!-- modal start-->
+                          <div class="mdl">
+                            <!-- modal button -->
+                            <button class="card btn"
+                             data-bs-toggle="modal"
+                              data-bs-target="#m2">
+                              Learn More
+                            </button>
+                            <!-- modal body -->
+                            <div class="modal" id="m2">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h5 class="modal-title">
+                                      Sharm El-Sheikh
+                                    </h5>
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <ul>
+                                      <h5>Features</h5>
+                                      <li>
+                                        5star hotel
+                                      </li>
+                                      <li>
+                                        Enjoy luxurious resorts and upscale hotels with plenty of entertainment and relaxation options.
+                                      </li>
+                                      <li>
+                                        Indulge in vibrant nightlife at numerous restaurants, cafes, and nightclubs.
+                                      </li>
+                                      <li>
+                                        Discover breathtaking nature on desert safari tours and camel rides in the desert.
+                                      </li>
+                                      <li>
+                                        Experience thrilling water activities like surfing, snorkeling, and scuba diving.
+                                      </li>
+                                    </ul>
+                                    <p>
+                                      Explore the jewel of the Red Sea coast in Sharm El Sheikh, where crystal-clear blue waters meet golden sandy beaches, making it an ideal destination for diving, snorkeling, luxurious resorts, and a variety of entertainment activities.
+                                    </p>s
+
+                                    <h6>Price: <span>100$</span></h6>
+                                  </div>
+                                  <div class="modal-footer text-start">
+                                    <button class="c-btn" data-bs-dismiss="modal">close</button>
+                                    <button class="b-btn" data-bs-dismiss="modal"><a href="#book" class="btn">booking now</a></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- modal end-->
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 my-2 p-0 ">
+                <div class="row d-sm-flex flex-row-reverse">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="image rr py-2">
+                          <img src="images/hurgada1.jpg" class="img-fluid rounded-end rounded-4"  alt="...">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Hurg<span>hada</span></h5>
+                          <p class="card-text">
+                            Adventure awaits in Hurghada, where pristine beaches and vibrant underwater worlds beckon exploration and relaxation.</p>
+                          <p class="card-text la">Last updated 3 mins ago</p>
+                          <div class="star mb-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                          </div>
+                            <!-- modal start-->
+                            <div class="mdl">
+                              <!-- modal button -->
+                              <button class="card btn"
+                               data-bs-toggle="modal"
+                                data-bs-target="#m3">
+                                Learn More
+                              </button>
+                              <!-- modal body -->
+                              <div class="modal" id="m3">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                      <h5 class="modal-title">
+                                        Hurghada
+                                      </h5>
+                                      <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <ul>
+                                        <h5>Features</h5>
+                                        <li>
+                                          5star hotel
+                                        </li>
+                                        <li>
+                                          Enjoy thrilling diving experiences in its magnificent coral reefs.
+                                        </li>
+                                        <li>
+                                          Take fun boat trips to explore the Red Sea
+                                        </li>
+                                        <li>
+                                          Engage in beach activities like jet skiing and parasailing
+                                        </li>
+                                        <li>
+                                          Indulge in fresh seafood dishes at upscale restaurants
+                                        </li>
+                                        <li>
+                                          Discover vibrant nightlife in its entertainment districts.
+                                        </li>
+                                      </ul>
+                                      <p>
+                                        Get ready for an unforgettable journey in Hurghada, where the pure white sandy beaches stretch along the Red Sea coast, and its enchanting marine worlds attract diving and snorkeling enthusiasts, offering both relaxation and adventure.
+                                      </p>
+
+                                      <h6>Price: <span>80$</span></h6>
+                                    </div>
+                                    <div class="modal-footer text-start">
+                                      <button class="c-btn" data-bs-dismiss="modal">close</button>
+                                      <button class="b-btn" data-bs-dismiss="modal"><a href="#book" class="btn">booking now</a></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- modal end-->
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 my-2 p-0 ">
+                <div class="row d-sm-flex flex-row-reverse">
+                    <div class="col-sm-12 col-md-4 ">
+                        <div class="image rr py-2">
+                          <img src="images/siwa1.jpg" class="img-fluid rounded-end rounded-4"  alt="...">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Si<span>wa</span></h5>
+                          <p class="card-text">
+                            Discover the hidden gem of Siwa Oasis, a desert sanctuary boasting lush palm groves and unique cultural experiences.</p>
+                          <p class="card-text la">Last updated 3 mins ago</p>
+                          <div class="star mb-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                          </div>
+                            <!-- modal start-->
+                            <div class="mdl">
+                              <!-- modal button -->
+                              <button class="card btn"
+                               data-bs-toggle="modal"
+                                data-bs-target="#m4">
+                                Learn More
+                              </button>
+                              <!-- modal body -->
+                              <div class="modal" id="m4">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                      <h5 class="modal-title">
+                                        Siwa
+                                      </h5>
+                                      <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <ul>
+                                        <h5>Features</h5>
+                                        <li>
+                                          5star hotel
+                                        </li>
+                                        <li>
+                                          Enjoy the stunning beauty of the desert landscape and charming natural views.
+                                        </li>
+                                        <li>
+                                          Visit the Temple of Amun and the Temple of Amun Ra to explore ancient history
+                                        </li>
+                                        <li>
+                                          Experience swimming in local salt lakes
+                                        </li>
+                                        <li>
+                                          Enjoy motorcycle rides or camel trips in the desert
+                                        </li>
+                                        <li>
+                                          Wander around the main market to buy unique souvenirs
+                                        </li>
+                                      </ul>
+                                      <p>
+                                        Explore the desert gem of Siwa Oasis, where you can enjoy tranquility in the heart of the Western Desert, surrounded by breathtaking views of the oasis and its surrounding salt lakes.
+                                      </p>
+
+                                      <h6>Price: <span>50$</span></h6>
+                                    </div>
+                                    <div class="modal-footer text-start">
+                                      <button class="c-btn" data-bs-dismiss="modal">close</button>
+                                      <button class="b-btn" data-bs-dismiss="modal"><a href="#book" class="btn">booking now</a></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- modal end-->
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 my-2 p-0 ">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                      <div class="image py-2">
+                        <img src="images/luxor1.jpg" class="img-fluid rounded-start rounded-4" alt="...">
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title"><span>Lu</span>xor</h5>
+                        <p class="card-text">Step back in time in Luxor, where temples and tombs tell the story of Egypt's pharaonic past with timeless allure.</p>
+                        <p class="card-text la">Last updated 3 mins ago</p>
+                        <div class="star mb-2">
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                          <i class="fa-solid fa-star checked"></i>
+                        </div>
+                          <!-- modal start-->
+                          <div class="mdl">
+                            <!-- modal button -->
+                            <button class="card btn"
+                             data-bs-toggle="modal"
+                              data-bs-target="#m5">
+                              Learn More
+                            </button>
+                            <!-- modal body -->
+                            <div class="modal" id="m5">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header text-center">
+                                    <h5 class="modal-title">
+                                      Luxor
+                                    </h5>
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <ul>
+                                      <h5>Features</h5>
+                                      <li>
+                                        5star hotel
+                                      </li>
+                                      <li>
+                                        Explore its famous temples and pharaonic tombs like Karnak Temple and Luxor Temple
+                                      </li>
+                                      <li>
+                                        Visit the Valley of the Kings and the famous pharaonic tombs
+                                      </li>
+                                      <li>
+                                        Wander through the traditional market and buy goods and souvenirs
+                                      </li>
+                                      <li>
+                                        Enjoy magical sound and light shows that tell stories of ancient Egyptian civilization
+                                      </li>
+                                    </ul>
+                                    <p>
+                                      Get ready for a journey through time in Luxor, where you can explore the relics of the ancient Pharaonic civilization, visit its massive temples like Karnak Temple and Luxor Temple, and enjoy felucca rides along the Nile banks.
+                                    </p>
+
+                                    <h6>Price: <span>70$</span></h6>
+                                  </div>
+                                  <div class="modal-footer text-start">
+                                    <button class="c-btn" data-bs-dismiss="modal">close</button>
+                                    <button class="b-btn" data-bs-dismiss="modal"><a href="#book" class="btn">booking now</a></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- modal end-->
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="card col-sm-12 col-md-6 my-2 p-0 ">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 ">
+                      <div class="image py-2">
+                        <img src="images/aswan1.jpg" class="img-fluid rounded-start rounded-4" alt="..." style="height: auto">
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><span>As</span>wan</h5>
+                          <p class="card-text">
+                            Journey to Aswan, where the tranquil beauty of the Nile intertwines with ancient wonders and serene landscapes.</p>
+                          <p class="card-text la">Last updated 3 mins ago</p>
+                          <div class="star mb-2">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                          </div>
+                            <!-- modal start-->
+                            <div class="mdl">
+                              <!-- modal button -->
+                              <button class="card btn"
+                               data-bs-toggle="modal"
+                                data-bs-target="#m6">
+                                Learn More
+                              </button>
+                              <!-- modal body -->
+                              <div class="modal" id="m6">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header text-center">
+                                      <h5 class="modal-title">
+                                        Aswan
+                                      </h5>
+                                      <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <ul>
+                                        <h5>Features</h5>
+                                        <li>
+                                          5star hotel
+                                        </li>
+                                        <li>
+                                          Cruise along the Nile with enchanting views of ancient landmarks.
+                                        </li>
+                                        <li>
+                                          Visit the famous Philae Temple and Abu Simbel Temple.
+                                        </li>
+                                        <li>
+                                          Shop at local markets and purchase traditional handicrafts.
+                                        </li>
+                                        <li>
+                                          Explore a local Nubian village and try its traditional cuisine.
+                                        </li>
+                                        <li>
+                                          Relax in serene atmospheres by the Nile River.
+                                        </li>
+                                      </ul>
+                                      <p>
+                                        Prepare for a magical experience in Aswan, where the captivating beauty of the Nile meets ancient wonders like the Nubian Island and the High Dam, offering visitors a unique and unforgettable experience.
+                                      </p>
+
+                                      <h6>Price: <span>60$</span></h6>
+                                    </div>
+                                    <div class="modal-footer text-start">
+                                      <button class="c-btn" data-bs-dismiss="modal">close</button>
+                                      <button class="b-btn" data-bs-dismiss="modal"><a href="#book" class="btn">booking now</a></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- modal end-->
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- packages end -->
+
+
+
+<!-- services start -->
+<section class="services py-5" id="services">
+    <div class="container">
+        <div class="main-text text-center mb-5">
+            <h1><span>S</span>ervices</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-3 mb-3 text-center">
+                    <i class="fa-solid fa-hotel"></i>
+                    <div class="card-body">
+                      <h3 class="card-title">Afforable Hotel</h3>
+                      <p class="card-text"> We provide hotel booking services and offer the best deals and additional discounts.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-3 mb-3 text-center">
+                    <i class="fa-solid fa-utensils"></i> 
+                    <div class="card-body">
+                      <h3 class="card-title">Food Experiences</h3>
+                      <p class="card-text">We offer a unique dining experience at the finest restaurants good value, good service.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-3 mb-3 text-center">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <div class="card-body">
+                      <h3 class="card-title">Safety Guide</h3>
+                      <p class="card-text">We provide tourist guidance services and focus on safety and security.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-3 mb-3 text-center">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <div class="card-body">
+                      <h3 class="card-title">Around Of The World </h3>
+                      <p class="card-text">We offer trips around the world to various countries.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-3 mb-3 text-center">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                    <div class="card-body">
+                      <h3 class="card-title">save your money</h3>
+                      <p class="card-text">We offer the best value for money </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card py-3 mb-3 text-center">
+                    <i class="fa-solid fa-person-hiking"></i>
+                    <div class="card-body">
+                      <h3 class="card-title">Adventure programs</h3>
+                      <p class="card-text"> We offer Exciting adventure and sports programs </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- services end -->
+
+<!-- gallary start -->
+<section class="gallary py-5" id="gallary">
+  <div class="container">
+    <div class="main-text text-center mb-5">
+      <h1><span>G</span>allary</h1>
+    </div>
+    <div class="row">
+  
+     <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-md-0 mb-3">
+        <div class="card">
+        <img src="images/aswan.jpeg" class="rounded"  style="height: 230px;" alt="">
+        </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-md-0 mb-3">
+        <div class="card">
+        <img src="images/hurgada.jpg" class="rounded"  style="height: 230px;" alt="">
+        </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-md-0 mb-3">
+        <div class="card">
+        <img src="images/siwa o.jpg" class="rounded"  style="height: 230px;" alt="">
+        </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-md-0 mb-3">
+        <div class="card">
+        <img src="images/luxor.jpg" class="rounded"  style="height: 230px;" alt="">
+        </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-md-0 mb-3">
+        <div class="card">
+        <img src="images/card1 (5).jpg" class="rounded"  style="height: 230px;" alt="">
+        </div>
+     </div>
+     <div class="col-sm-12 col-md-6 col-lg-4 py-3 py-md-0 mb-3">
+        <div class="card">
+        <img src="images/sharm l.jpg" class="rounded"  style="height: 230px;" alt="">
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
+<!-- gallary end -->
+
+
+
+
+<!-- contact start -->
+<section class="py-5" id="contact">
+  <div class="container">
+    <div class="main-text text-center mb-5">
+      <h1><span>C</span>ontact Us</h1>
+    </div>
+
+    <div class="row d-flex align-items-center  flex-row-reverse">
+      <div class="d-none d-md-block  col-sm-12 col-md-12 col-lg-6 py-3 py-md-0">
+        <div class="card">
+          <img src="images/contact (2).svg" alt="">
+        </div>
+      </div>
+      <div class="cards col-sm-12 col-md-12 col-lg-6 py-2">
+        <div class="row text-center align-items-center">
+          <div class="col-sm-12 col-md-6">
+            <div class="card py-2 mb-3">
+              <a href="mailto:contact@travel.com" target="_blank">
+                  <i class="fa-solid fa-envelope"></i>
+                    <div class="card-body">
+                      <h5>
+                       contact@travel.com
+                      </h5>
+                    </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="card  py-2 mb-3">
+              <a href="tel:+201154314532" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                <div class="card-body">
+                  <h5>
+                    Tel: +201154314532
+                  </h5>
+                </div>
+              </a>
+            </div>
+        </div>
+      </div>
+        <div class="row text-center align-items-center">
+          
+          <div class="col-12">
+              <div class="card py-2 mb-3">
+                <a href="https://www.google.com/maps?q=29.8452061,31.3158697" target="_blank">
+                <i class="fa-solid fa-location-dot"></i>
+                  <div class="card-body">
+                    <h5>
+                      egypt-cairo-maadi-9 street
+                    </h5>
+                  </div>
+                </a>
+              </div>
+          </div>
+      </div>
+      </div>
+       
+    </div>
+  </div>
+</section>
+<!-- contact us end -->
+
+<!-- about start -->
+<section id="about" class=" about py-5" >
+  <div class="container">
+    <div class="main-text text-center mb-3">
+      <h1>
+        About<span>Us</span>
+      </h1>
+    </div>
+      <div class="row text-center align-items-center d-sm-flex ">
+          <div class="card d-none d-md-block col-md-6 col-sm-12">
+            <a href="https://www.google.com/maps?q=29.8452061,31.3158697" target="_blank"><img class="image d-none d-md-block img-fluid w-40" src="images/about.svg" alt=""></a>
+              
+          </div>
+          <div class="col-md-6 col-sm-12">
+              <div class="">
+                  <p class="py-1 lead"><strong>Travel: </strong>Company is a leader in the travel industry, committed to providing unique and amazing travel experiences for its customers. We offer excellent services in organizing tours, hotel bookings, and arranging transportation, to ensure enjoyable and unforgettable tourist trips. We take pride in delivering our services with professionalism and high quality, and we always strive to achieve customer satisfaction. Thank you for trusting us as a reliable tourism company to explore the world together."</p>
+                  <!-- modal start-->
+                  <div class="mdl">
+                    <!-- modal button -->
+                    <button class="card btn m-auto"
+                     data-bs-toggle="modal"
+                      data-bs-target="#m7">
+                      Learn More
+                    </button>
+                  <!-- modal body -->
+                  <div class="modal" id="m7">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header text-center">
+                          <h5 class="modal-title">
+                            About<span>Us</span>
+                          </h5>
+                          <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            Our travel company was established to offer exceptional travel experiences that blend comfort, diversity, and adventure. We are committed to meeting the needs of our customers and delivering unique travel experiences, whether they are family trips, adventure tours, or special events. With a team of experienced and professional individuals, we strive to provide the highest levels of quality and satisfaction to our clients, making every journey with us an unforgettable moment.
+                          </p>
+                        </div>
+                        <div class="modal-footer text-start">
+                          <button class="close btn" data-bs-dismiss="modal">close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- modal end-->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- about end -->
+
+<!-- Footer Start -->
+  <footer  id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h1><span>T</span>ravel</h1>
+          <p>
+            <strong>Travel</strong>
+            has been awarded as the Best Online Travel Company in Africa for 2023 and the Best in Egypt for 2023, 2022, and 2021 by the World Travel Awards. Specializing in hotel bookings, flight tickets, car rentals, and various travel packages, it holds a Saudi license number 37104308, an Egyptian license number 1943, and an IATA number 90226710.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="social-links">
+            <ul class="py-5"> 
+              <li><a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/groups/elonmusk.fb/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/elonrmuskk/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="https://www.pinterest.com/teslamotors/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright text-center">
+          <p>&copy;Copyright created-by Mostafa Ibrahem.</p>
+        </div>
+      </div>
+    </div>
+  </footer>    
+    <!-- Footer End -->
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

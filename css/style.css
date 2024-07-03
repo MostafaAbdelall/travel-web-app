@@ -1,0 +1,306 @@
+body{
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+span{
+    color: #ffa800;
+}
+.btn{
+    background-color: #ffa800;
+    color: black;
+    transition: 0.5s;
+    outline: #ffa800;
+    border: #ffa800;
+    box-shadow: 0px 5px 5px -5px #000;
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: #ffa800;
+}
+ section a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: #ffa800;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0px 5px 5px -5px #000;
+}
+section a:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: #ffa800;
+}
+.main-text{
+    background-color: rgba(239, 239, 239, 0.5);
+    box-shadow: 0px 5px 10px -4px #000;
+    border-radius: 8px ;
+}
+.main-text h1{
+    padding: 5px 0;
+    text-shadow: 0 1.5px 2px black
+    
+}
+.card{
+    box-shadow: 0px 5px 5px -5px #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav start */
+nav{
+    height: 75px;
+    box-shadow: 0 2px 15px 3px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+}
+#logo{
+    font-size: 3em;
+    color: black;
+    text-shadow: 0 2px 1px black
+}
+.nav-item a{
+    color: #fafafa;
+    transition: 0.5s;
+}
+.nav-item a:hover{
+    background-color: #ffa800;
+    border-radius: 6px;
+    color: #fafafa;
+    box-shadow: 0px 5px 5px -5px #000;
+}
+.navbar form {
+    background-color: transparent ;
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-shadow: 0px 5px 5px -5px #000;
+}
+form .fm{
+    border: #ffa800;
+    border-radius: 0 5px 5px 0;
+}
+nav form .btn:hover{
+transform: scale(1);
+}
+.navbar form input{
+    background-color: transparent;
+    width: 150px;
+    padding-left:15px ;
+    border: none;
+    outline: none;
+    color: #fafafa;
+}
+.navbar-toggler {
+    background-color: black;
+    transition: 0.5s;
+    border: 1px solid #ffa800;
+}
+.navbar-toggler:hover{
+    background-color: #fafafa;
+    transform: scale(1.1);
+}
+/* nav end */
+/* home stat */
+
+.home .content{
+    padding-top: 200px;
+}
+.home .content h5{
+    color: #fafafa;
+    font-size: 2em;
+    font-weight: 500;
+    text-shadow: 0px 1.5px 2px #000;
+}
+.home .content h1{
+    color: #fafafa;
+    font-size: 4em;
+    font-weight: 600;
+    text-shadow: 0px 1.5px 2px #000;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa800;
+    text-shadow: 0px 1.5px 2px #000;
+    animation: changetext 15s infinite linear;
+    animation-delay: 0.5s;
+}
+@keyframes changetext{
+    0%{content: "Cairo";}
+    10%{content: "Sharm El-Sheikh";}
+    20%{content: "Hurghada";}
+    30%{content: "Luxor";}
+    40%{content: "Aswan";}
+    50%{content: "El Gouna";}
+    60%{content: "Dahab";}
+    70%{content: "Siwa";}
+    80%{content: "Nuweiba";}
+    90%{content: "Black&White Desart";}
+    100%{content: "North Cost";}
+}
+.home .content p{
+    color: #fafafa;
+    font-size: 1em;
+    font-weight: 600;
+    text-shadow: 0px 1.5px 2px #000;
+}
+/* home end */
+
+/* book start */
+.book form input, textarea{
+    box-shadow: 0px 5px 5px -5px #000;
+}
+.book .card:hover{
+    background-color: #fafafa;
+}
+textarea{
+    resize: none;
+}
+/* book end */
+
+
+/* packages start */
+.card .b-btn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.card .c-btn{
+    width: 75px;
+    height: 35px;
+    background-color: black;
+    color: #ffa800;
+    border-radius: 6px;
+    transition: 0.5s;
+    outline: #ffa800;
+    border:1px solid #ffa800;
+    box-shadow: 0px 5px 5px -5px #000;
+}
+.card .c-btn:hover{
+    transform: scale(1.1);
+    background-color: #ffa800;
+    color: black;
+}
+.card .image img{
+    box-shadow: 2px 3px 8px 1px #000;
+}
+.card .rr img{
+    box-shadow: -2px 3px 8px 1px #000;
+}
+.card-body .la{
+    font-size: .8em;
+    color: #b8b8b8;
+}
+
+.card .card-body .card-title{
+    text-align: center;
+}
+
+.card a,.btn:hover{
+    border:1px solid #ffa800;
+}
+.services .card i{
+    font-size: 3em;
+    color: #ffa800;
+}
+
+/* packages end */
+
+
+/* services start*/
+.services{
+    background-image: url(../images/bg2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.services .card:hover{
+    background-color: #000;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+/* services end*/
+
+/* gallary start */
+.gallary .card:hover{
+    background-color: #000;
+    color: #fafafa;
+    transform: scale(1.1);
+}
+
+/* gallary end */
+
+/* contact start */
+#contact .card{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+/* contact end */
+/* ABOUT START */
+.about .card a{
+    background-color: #fafafa;
+    outline: none;
+    border: none;
+    
+}
+.about .card a:hover{
+    transform: scale(1);
+}
+/* ABOUT END */
+
+/* footer start */
+footer{
+    background-color: #ffa500;
+    color: #fafafa;
+    box-shadow: 0 -3px 15px -5px #000;
+}
+footer h1{
+    color: #000;
+    text-shadow: 0px 1.5px 2px #000;
+}
+footer h1 span{
+    color: #ffa800;
+}
+footer p{
+    text-shadow: 0px 1px 1.5px #000;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;                          
+}
+footer ul li a{
+    font-size: 2em;
+    border-radius: 50%;
+    transition: 0.3s;
+    color: #fafafa;
+    text-shadow: 0px 1px 1px #000;
+    display: inline-block;
+}
+
+footer ul li a:hover{
+    color: #000;
+    transform: scale(1.3);
+}
+footer .copyright{
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+footer .copyright:hover{
+    color: #000;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/* footer end */
+
